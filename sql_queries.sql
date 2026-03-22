@@ -200,19 +200,22 @@ ORDER BY played_matches, goal_number;
 
 SELECT
     scorer,
-    COUNT(*) AS goals
+    COUNT(scorer) AS goals
 FROM long_table_matches
+WHERE scorer IS NOT NULL
 GROUP BY scorer
 ORDER BY goals DESC, scorer;
+
 
 -- Goals scored against each opponent
 
 SELECT
     opponent,
-    COUNT(*) AS goals
+    COUNT(scorer) AS goals
 FROM long_table_matches
+WHERE scorer IS NOT NULL
 GROUP BY opponent
-ORDER BY goals DESC;
+ORDER BY goals DESC, opponent;
 
 -- Who most often scores Litvínov's first goal in a match
 
@@ -293,10 +296,10 @@ ORDER BY m.home_away, goals DESC;
 SELECT
     opponent,
     scorer,
-    COUNT(*) AS goals,
+    COUNT(scorer) AS goals,
     RANK() OVER (
         PARTITION BY opponent
-        ORDER BY COUNT(*) DESC
+        ORDER BY COUNT(scorer) DESC
     ) AS rnk
 FROM long_table_matches
 WHERE scorer IS NOT NULL
