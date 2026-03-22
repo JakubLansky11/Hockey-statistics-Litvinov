@@ -113,7 +113,7 @@ The project can also serve as a base for a **Power BI dashboard**, which I may c
 
 - `Hokej_LIT.ipynb` – main Jupyter Notebook with Python analysis and visualisations
 - `Statistiky.xlsx` – source Excel dataset prepared before Python analysis
-- `sql_querries.pdf` – a collection of SQL queries I tested in PostgreSQL on datasets prepared in Python
+- `sql_queries.sql` – a collection of SQL queries I tested in PostgreSQL on datasets prepared in Python
 - `pivot_graph_1.pdf` – an Excel pivot chart created from a pivot table
 - `README.md` – project description
 
@@ -143,7 +143,7 @@ The project can also serve as a base for a **Power BI dashboard**, which I may c
 An important part of the project was preparing structured outputs for database work.
 
 In Python, I created **two output datasets** that were later used in **PostgreSQL**.  
-The file `sql_querries.pdf` contains examples of SQL queries that I tested on these prepared datasets.
+The file `sql_queries.sql` contains examples of SQL queries that I tested on these prepared datasets.
 
 This part of the project helped me connect:
 - data preparation in Excel / Power Query
