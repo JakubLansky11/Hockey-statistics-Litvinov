@@ -7,7 +7,7 @@ The project combines multiple tools used in a realistic data workflow:
 - **Python** for data cleaning, transformation, analysis, and visualisation
 - **PostgreSQL** for testing SQL queries on prepared datasets
 - **Excel Pivot Table / Pivot Chart** for additional reporting output
-- **Power BI** data anyles dashboard
+- **Power BI** analytical dashboard
 
 The goal of the project was not only to analyze Litvínov’s performance across seasons, but also to prepare structured datasets for further SQL work and possible dashboard development.
 
@@ -15,7 +15,7 @@ The goal of the project was not only to analyze Litvínov’s performance across
 
 ## Project pipeline
 
-**Excel + Power Query → Python analysis → SQL-ready datasets → PostgreSQL → possible Power BI dashboard**
+**Excel + Power Query → Python analysis → SQL-ready datasets → PostgreSQL → Power BI dashboard**
 
 ---
 
@@ -70,7 +70,7 @@ My workflow was divided into several steps:
 - **Seaborn**
 - **PostgreSQL**
 - **Pivot Tables / Pivot Charts**
-- **Power BI** *(planned as a future extension)*
+- **Power BI**
 
 ---
 
