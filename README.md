@@ -7,7 +7,7 @@ The project combines multiple tools used in a realistic data workflow:
 - **Python** for data cleaning, transformation, analysis, and visualisation
 - **PostgreSQL** for testing SQL queries on prepared datasets
 - **Excel Pivot Table / Pivot Chart** for additional reporting output
-- potentially **Power BI** for future dashboard creation
+- **Power BI** data anyles dashboard
 
 The goal of the project was not only to analyze Litvínov’s performance across seasons, but also to prepare structured datasets for further SQL work and possible dashboard development.
 
@@ -93,9 +93,6 @@ Besides the Python analysis itself, I also used Python to prepare **two output d
 
 These exports were designed for use in **PostgreSQL**, where I continued testing SQL queries on the transformed data.
 
-### 4. Future extension
-The project can also serve as a base for a **Power BI dashboard**, which I may create in the future to extend the reporting and visual presentation of the analysis.
-
 ---
 
 ## Main questions answered
@@ -111,9 +108,11 @@ The project can also serve as a base for a **Power BI dashboard**, which I may c
 
 ## Repository contents
 
-- `Hokej_LIT.ipynb` – main Jupyter Notebook with Python analysis and visualisations
-- `Statistiky.xlsx` – source Excel dataset prepared before Python analysis
-- `sql_queries.sql` – a collection of SQL queries I tested in PostgreSQL on datasets prepared in Python
+- `Hokej_LIT.ipynb`   – main Jupyter Notebook with Python analysis and visualisations
+- `Statistiky.xlsx`   – source Excel dataset prepared before Python analysis
+- `sql_queries.sql`   – a collection of SQL queries I tested in PostgreSQL on datasets prepared in Python
+- `Hockey_LIT.pbix`   – Power BI dashboard - comparison of Litvinov seasons (points, goals, standing)
+- `Hockey_LIT.pdf`    – Power BI dashboard presentation
 - `pivot_graph_1.pdf` – an Excel pivot chart created from a pivot table
 - `README.md` – project description
 
@@ -164,7 +163,6 @@ This shows another way of presenting the analyzed data outside Python and demons
 
 - add more comments and explanations inside the notebook
 - more SQL scripts
-- create a Power BI dashboard as a follow-up project extension
 
 ---
 
